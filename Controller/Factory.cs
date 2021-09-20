@@ -174,5 +174,56 @@ namespace Controller
             return n;
         }
         //=======================END INSERT user==============
+
+        //======================= MODIFIER produit==============
+        public static int modifierProduit(Produit p)
+        {
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+
+            commande.CommandText = "update dbo.product set idProd=@idp, nomProd=@no, prix=@pri, qteProd=@q where idProd=@idp";
+
+            commande.Parameters.Add(new SqlParameter("@idp", p.IdProduit));
+            commande.Parameters.Add(new SqlParameter("@no", p.NomProduit));
+            commande.Parameters.Add(new SqlParameter("@pri", p.PrixProduit));
+            commande.Parameters.Add(new SqlParameter("@q", p.QteProduit));
+
+
+            int n = commande.ExecuteNonQuery();
+            return n;
+
+        }////=======================END MODIFIER produit==============
+        //=======================RECHERCHE Produit==============
+
+        public static Produit getResidentRechercheByCni(string idProd)
+        {
+            ArrayList pro = new ArrayList();
+            Produit p = null;
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "select * from dbo.product where idProd=@idp";
+            commande.Parameters.Add(new SqlParameter("@idp", idProd));
+            SqlDataReader reader = commande.ExecuteReader();
+
+            if (reader.Read())
+            {
+                p = new Produit();
+
+                p.IdProduit = reader["idProd"].ToString();
+                p.NomProduit = reader["nomProd"].ToString();
+                p.PrixProduit = reader["prix"].ToString();
+                p.QteProduit = reader["qteProd"].ToString();
+
+            }
+
+            reader.Close();
+            conn.Close();
+            return p;
+
+        }//=======================END RECHERCHE produit==============
     }
 }

@@ -69,5 +69,65 @@ namespace View
 
 
         }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecherche_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        void recupererProduit(Produit p)
+        {
+            tidProd.Text = p.IdProduit;
+            tNomProd.Text = p.NomProduit;
+            tPrixProd.Text = p.PrixProduit;
+            tQuantiteProd.Text = p.QteProduit;
+
+        }
+
+        private void btnRecherche_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModifier_Click_1(object sender, EventArgs e)
+        {
+            Application.EnableVisualStyles();
+            DialogResult dr = MessageBox.Show("Voulez-vous vraiment Modifier ces donnees??", "", MessageBoxButtons.YesNo);
+            switch (dr)
+            {
+                case DialogResult.Yes:
+                    p = new Produit();
+                    p.NomProduit = tNomProd.Text;
+                    p.IdProduit = tidProd.Text;
+                    p.PrixProduit = tPrixProd.Text;
+                    p.QteProduit = tQuantiteProd.Text;
+
+
+                    try
+                    {
+                        int line = Factory.modifierProduit(p);
+
+                        if (line != 0)
+                            MessageBox.Show("Modification Reussie");
+                        // Actualiser();
+                        // Reinitialiser();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    MessageBox.Show("Votre donnees a ete modifiees !!");
+                    break;
+                case DialogResult.No:
+                    MessageBox.Show("Votre donnees n'a pas ete modifiees!!");
+                    break;
+            }
+        }
     }
 }

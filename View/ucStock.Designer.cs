@@ -44,13 +44,14 @@
             this.dgvStock = new System.Windows.Forms.DataGridView();
             this.tRecherche = new System.Windows.Forms.TextBox();
             this.btnRecherche = new System.Windows.Forms.Button();
+            this.btnActualiser = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(242, 112);
+            this.btnAjouter.Location = new System.Drawing.Point(170, 112);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 0;
@@ -69,6 +70,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualiser);
             this.groupBox1.Controls.Add(this.tidProd);
             this.groupBox1.Controls.Add(this.idProdll);
             this.groupBox1.Controls.Add(this.label4);
@@ -133,7 +135,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(484, 112);
+            this.btnSupprimer.Location = new System.Drawing.Point(372, 112);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 5;
@@ -142,12 +144,13 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(361, 112);
+            this.btnModifier.Location = new System.Drawing.Point(267, 112);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
             this.btnModifier.TabIndex = 4;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click_1);
             // 
             // tPrixProd
             // 
@@ -193,6 +196,16 @@
             this.btnRecherche.TabIndex = 9;
             this.btnRecherche.Text = "Recherche";
             this.btnRecherche.UseVisualStyleBackColor = true;
+            this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click_1);
+            // 
+            // btnActualiser
+            // 
+            this.btnActualiser.Location = new System.Drawing.Point(484, 112);
+            this.btnActualiser.Name = "btnActualiser";
+            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.TabIndex = 9;
+            this.btnActualiser.Text = "Actualiser";
+            this.btnActualiser.UseVisualStyleBackColor = true;
             // 
             // ucStock
             // 
@@ -232,5 +245,6 @@
         private System.Windows.Forms.TextBox tidProd;
         private System.Windows.Forms.Label idProdll;
         private System.Windows.Forms.Button btnRecherche;
+        private System.Windows.Forms.Button btnActualiser;
     }
 }
