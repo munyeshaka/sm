@@ -1,0 +1,2 @@
+C:\Users\Munyeshaka\project\BUI\C#\sma\sma\bin\Debug\sma.exe.config
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\sma.exe.config
