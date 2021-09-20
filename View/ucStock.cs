@@ -70,16 +70,6 @@ namespace View
 
         }
 
-        private void btnModifier_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRecherche_Click(object sender, EventArgs e)
-        {
-
-        }
-
         void recupererProduit(Produit p)
         {
             tidProd.Text = p.IdProduit;
@@ -91,7 +81,12 @@ namespace View
 
         private void btnRecherche_Click_1(object sender, EventArgs e)
         {
-
+            string ma = tRecherche.Text.Trim();
+            p = Factory.getProduitRechercheByid(ma);
+            if (p != null)
+            {
+                recupererProduit(p);
+            }
         }
 
         private void btnModifier_Click_1(object sender, EventArgs e)

@@ -197,7 +197,7 @@ namespace Controller
         }////=======================END MODIFIER produit==============
         //=======================RECHERCHE Produit==============
 
-        public static Produit getResidentRechercheByCni(string idProd)
+        public static Produit getProduitRechercheByid(string idProd)
         {
             ArrayList pro = new ArrayList();
             Produit p = null;
