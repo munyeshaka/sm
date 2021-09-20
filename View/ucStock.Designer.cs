@@ -208,6 +208,7 @@
             this.btnActualiser.TabIndex = 9;
             this.btnActualiser.Text = "Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // ucStock
             // 

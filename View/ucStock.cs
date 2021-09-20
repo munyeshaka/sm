@@ -45,8 +45,8 @@ namespace View
 
                 if (line != 0)
                     MessageBox.Show("Enregistrement reussi");
-                //Actualiser();
-                //Reinitialiser();
+                Actualiser();
+                Reinitialiser();
             }
 
             catch (Exception ex)
@@ -109,8 +109,8 @@ namespace View
 
                         if (line != 0)
                             MessageBox.Show("Modification Reussie");
-                        // Actualiser();
-                        // Reinitialiser();
+                         Actualiser();
+                         Reinitialiser();
                     }
                     catch (Exception ex)
                     {
@@ -142,13 +142,14 @@ namespace View
             switch (dr)
             {
                 case DialogResult.Yes:
+
                     try
                     {
                         int line = Factory.deleteProduit(tRecherche.Text);
                         if (line != 0)
                             MessageBox.Show("Suppression reussi");
-                        //Actualiser();
-                        //Reinitialiser();
+                        Actualiser();
+                        Reinitialiser();
                     }
                     catch (Exception ex)
                     {
@@ -163,5 +164,25 @@ namespace View
 
             }
         }
+
+        private void btnActualiser_Click(object sender, EventArgs e)
+        {
+            listStock = Factory.getProduit();
+            dgvStock.DataSource = listStock;
+            Reinitialiser();
+        }
+         private void Actualiser()
+        {
+            listStock = Factory.getProduit();
+            dgvStock.DataSource = listStock;
+        }
+         private void Reinitialiser()
+         {
+             tidProd.Text = "";
+             tNomProd.Text = "";
+             tPrixProd.Text = "";
+             tQuantiteProd.Text = "";
+
+         }
     }
 }
