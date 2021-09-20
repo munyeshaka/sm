@@ -1,2 +1,16 @@
 C:\Users\Munyeshaka\project\BUI\C#\sma\sma\bin\Debug\sma.exe.config
 C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\sma.exe.config
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\sma.exe
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\sma.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.csprojResolveAssemblyReference.cache
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.Form1.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.Properties.Resources.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.csproj.GenerateResource.Cache
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.exe
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\obj\Debug\sma.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\Controller.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\Model.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\View.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\Controller.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\Model.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\sma\bin\Debug\View.pdb

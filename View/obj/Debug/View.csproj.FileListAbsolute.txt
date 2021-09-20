@@ -1,0 +1,17 @@
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucAdmin.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucCaissier.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucStock.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\View.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\View.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\Controller.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\Model.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\Controller.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\Model.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucAdminLogin.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.dll
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.pdb
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucUser.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucVente.resources
+C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.usVenteAdmin.resources
