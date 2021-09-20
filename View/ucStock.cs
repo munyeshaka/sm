@@ -124,5 +124,16 @@ namespace View
                     break;
             }
         }
+
+        private void dgvStock_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvStock.SelectedRows.Count > 0)
+            {
+                tidProd.Text = dgvStock.SelectedRows[0].Cells[0].Value.ToString();
+                tNomProd.Text = dgvStock.SelectedRows[0].Cells[1].Value.ToString();
+                tPrixProd.Text = dgvStock.SelectedRows[0].Cells[2].Value.ToString();
+                tQuantiteProd.Text = dgvStock.SelectedRows[0].Cells[3].Value.ToString();
+            }
+        }
     }
 }

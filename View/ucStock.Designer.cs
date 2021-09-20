@@ -111,9 +111,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(383, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Quantitée";
+            this.label4.Text = "Quantité";
             // 
             // label2
             // 
@@ -180,6 +180,7 @@
             this.dgvStock.Name = "dgvStock";
             this.dgvStock.Size = new System.Drawing.Size(438, 320);
             this.dgvStock.TabIndex = 4;
+            this.dgvStock.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStock_CellClick);
             // 
             // tRecherche
             // 
