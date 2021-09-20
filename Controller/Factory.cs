@@ -225,5 +225,17 @@ namespace Controller
             return p;
 
         }//=======================END RECHERCHE produit==============
+
+        //======================= SUPRRIMER produit==============
+        public static int deleteProduit(string idp)
+        {
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "delete from dbo.product where idProd = @id";
+            commande.Parameters.AddWithValue("@id", idp);
+            int n = commande.ExecuteNonQuery();
+            return n;
+        }//=======================END SUPRRIMER RESIDENT==============
     }
 }

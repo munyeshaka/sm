@@ -135,5 +135,33 @@ namespace View
                 tQuantiteProd.Text = dgvStock.SelectedRows[0].Cells[3].Value.ToString();
             }
         }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Voulez-vous vraiment supprimer ce resident??", "", MessageBoxButtons.YesNo);
+            switch (dr)
+            {
+                case DialogResult.Yes:
+                    try
+                    {
+                        int line = Factory.deleteProduit(tRecherche.Text);
+                        if (line != 0)
+                            MessageBox.Show("Suppression reussi");
+                        //Actualiser();
+                        //Reinitialiser();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    MessageBox.Show("Votre donnees a ete supprime ...");
+                    break;
+                case DialogResult.No:
+                    MessageBox.Show("Votre donnees n'a pas ete supprime ...");
+                    break;
+
+            }
+        }
     }
 }
