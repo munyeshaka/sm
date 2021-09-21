@@ -51,6 +51,7 @@
             // 
             // btnAjouter
             // 
+            this.btnAjouter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnAjouter.Location = new System.Drawing.Point(170, 112);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
@@ -62,14 +63,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(375, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "STOCK";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.btnActualiser);
             this.groupBox1.Controls.Add(this.tidProd);
             this.groupBox1.Controls.Add(this.idProdll);
@@ -82,6 +86,8 @@
             this.groupBox1.Controls.Add(this.tQuantiteProd);
             this.groupBox1.Controls.Add(this.tNomProd);
             this.groupBox1.Controls.Add(this.btnAjouter);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(17, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(780, 148);
@@ -91,9 +97,10 @@
             // 
             // btnActualiser
             // 
-            this.btnActualiser.Location = new System.Drawing.Point(484, 112);
+            this.btnActualiser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnActualiser.Location = new System.Drawing.Point(470, 112);
             this.btnActualiser.Name = "btnActualiser";
-            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.Size = new System.Drawing.Size(89, 23);
             this.btnActualiser.TabIndex = 9;
             this.btnActualiser.Text = "Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
@@ -104,50 +111,59 @@
             this.tidProd.Enabled = false;
             this.tidProd.Location = new System.Drawing.Point(242, 19);
             this.tidProd.Name = "tidProd";
-            this.tidProd.Size = new System.Drawing.Size(100, 20);
+            this.tidProd.Size = new System.Drawing.Size(100, 22);
             this.tidProd.TabIndex = 8;
             // 
             // idProdll
             // 
             this.idProdll.AutoSize = true;
+            this.idProdll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idProdll.ForeColor = System.Drawing.Color.White;
             this.idProdll.Location = new System.Drawing.Point(167, 22);
             this.idProdll.Name = "idProdll";
-            this.idProdll.Size = new System.Drawing.Size(14, 13);
+            this.idProdll.Size = new System.Drawing.Size(16, 16);
             this.idProdll.TabIndex = 7;
             this.idProdll.Text = "#";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(383, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.Size = new System.Drawing.Size(65, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quantité";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(167, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nom";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(402, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.Size = new System.Drawing.Size(34, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Prix";
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(372, 112);
+            this.btnSupprimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSupprimer.Location = new System.Drawing.Point(361, 112);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(87, 23);
             this.btnSupprimer.TabIndex = 5;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
@@ -155,6 +171,7 @@
             // 
             // btnModifier
             // 
+            this.btnModifier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnModifier.Location = new System.Drawing.Point(267, 112);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
@@ -167,21 +184,21 @@
             // 
             this.tPrixProd.Location = new System.Drawing.Point(459, 19);
             this.tPrixProd.Name = "tPrixProd";
-            this.tPrixProd.Size = new System.Drawing.Size(100, 20);
+            this.tPrixProd.Size = new System.Drawing.Size(100, 22);
             this.tPrixProd.TabIndex = 3;
             // 
             // tQuantiteProd
             // 
             this.tQuantiteProd.Location = new System.Drawing.Point(459, 52);
             this.tQuantiteProd.Name = "tQuantiteProd";
-            this.tQuantiteProd.Size = new System.Drawing.Size(100, 20);
+            this.tQuantiteProd.Size = new System.Drawing.Size(100, 22);
             this.tQuantiteProd.TabIndex = 2;
             // 
             // tNomProd
             // 
             this.tNomProd.Location = new System.Drawing.Point(242, 52);
             this.tNomProd.Name = "tNomProd";
-            this.tNomProd.Size = new System.Drawing.Size(100, 20);
+            this.tNomProd.Size = new System.Drawing.Size(100, 22);
             this.tNomProd.TabIndex = 1;
             // 
             // dgvStock
@@ -195,16 +212,18 @@
             // 
             // tRecherche
             // 
-            this.tRecherche.Location = new System.Drawing.Point(422, 236);
+            this.tRecherche.Location = new System.Drawing.Point(403, 235);
             this.tRecherche.Name = "tRecherche";
             this.tRecherche.Size = new System.Drawing.Size(100, 20);
             this.tRecherche.TabIndex = 7;
             // 
             // btnRecherche
             // 
-            this.btnRecherche.Location = new System.Drawing.Point(543, 233);
+            this.btnRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecherche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnRecherche.Location = new System.Drawing.Point(524, 233);
             this.btnRecherche.Name = "btnRecherche";
-            this.btnRecherche.Size = new System.Drawing.Size(75, 23);
+            this.btnRecherche.Size = new System.Drawing.Size(94, 23);
             this.btnRecherche.TabIndex = 9;
             this.btnRecherche.Text = "Recherche";
             this.btnRecherche.UseVisualStyleBackColor = true;

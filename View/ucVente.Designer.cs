@@ -60,9 +60,11 @@
             // 
             // btnRechercheVente
             // 
-            this.btnRechercheVente.Location = new System.Drawing.Point(678, 235);
+            this.btnRechercheVente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRechercheVente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnRechercheVente.Location = new System.Drawing.Point(654, 235);
             this.btnRechercheVente.Name = "btnRechercheVente";
-            this.btnRechercheVente.Size = new System.Drawing.Size(75, 23);
+            this.btnRechercheVente.Size = new System.Drawing.Size(99, 23);
             this.btnRechercheVente.TabIndex = 13;
             this.btnRechercheVente.Text = "Recherche";
             this.btnRechercheVente.UseVisualStyleBackColor = true;
@@ -70,7 +72,7 @@
             // 
             // tRechercheVente
             // 
-            this.tRechercheVente.Location = new System.Drawing.Point(557, 237);
+            this.tRechercheVente.Location = new System.Drawing.Point(518, 238);
             this.tRechercheVente.Name = "tRechercheVente";
             this.tRechercheVente.Size = new System.Drawing.Size(100, 20);
             this.tRechercheVente.TabIndex = 12;
@@ -86,6 +88,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.btnActualiser);
             this.groupBox1.Controls.Add(this.tidProdVente);
             this.groupBox1.Controls.Add(this.idProdll);
@@ -98,6 +101,8 @@
             this.groupBox1.Controls.Add(this.tQuantiteProdVente);
             this.groupBox1.Controls.Add(this.tNomProdVente);
             this.groupBox1.Controls.Add(this.btnAjouterVente);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(236, 61);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(517, 148);
@@ -110,7 +115,7 @@
             this.tidProdVente.Enabled = false;
             this.tidProdVente.Location = new System.Drawing.Point(92, 19);
             this.tidProdVente.Name = "tidProdVente";
-            this.tidProdVente.Size = new System.Drawing.Size(100, 20);
+            this.tidProdVente.Size = new System.Drawing.Size(100, 22);
             this.tidProdVente.TabIndex = 8;
             // 
             // idProdll
@@ -118,7 +123,7 @@
             this.idProdll.AutoSize = true;
             this.idProdll.Location = new System.Drawing.Point(30, 22);
             this.idProdll.Name = "idProdll";
-            this.idProdll.Size = new System.Drawing.Size(14, 13);
+            this.idProdll.Size = new System.Drawing.Size(16, 16);
             this.idProdll.TabIndex = 7;
             this.idProdll.Text = "#";
             // 
@@ -127,7 +132,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(239, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quantitée";
             // 
@@ -136,7 +141,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(30, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nom";
             // 
@@ -145,15 +150,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(239, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.Size = new System.Drawing.Size(34, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Prix";
             // 
             // btnSupprimerVente
             // 
-            this.btnSupprimerVente.Location = new System.Drawing.Point(282, 112);
+            this.btnSupprimerVente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSupprimerVente.Location = new System.Drawing.Point(269, 112);
             this.btnSupprimerVente.Name = "btnSupprimerVente";
-            this.btnSupprimerVente.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimerVente.Size = new System.Drawing.Size(89, 23);
             this.btnSupprimerVente.TabIndex = 5;
             this.btnSupprimerVente.Text = "Supprimer";
             this.btnSupprimerVente.UseVisualStyleBackColor = true;
@@ -161,9 +167,10 @@
             // 
             // btnModifierVente
             // 
-            this.btnModifierVente.Location = new System.Drawing.Point(188, 112);
+            this.btnModifierVente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnModifierVente.Location = new System.Drawing.Point(178, 112);
             this.btnModifierVente.Name = "btnModifierVente";
-            this.btnModifierVente.Size = new System.Drawing.Size(75, 23);
+            this.btnModifierVente.Size = new System.Drawing.Size(85, 23);
             this.btnModifierVente.TabIndex = 4;
             this.btnModifierVente.Text = "Modifier";
             this.btnModifierVente.UseVisualStyleBackColor = true;
@@ -173,25 +180,26 @@
             // 
             this.tPrixProdVente.Location = new System.Drawing.Point(336, 12);
             this.tPrixProdVente.Name = "tPrixProdVente";
-            this.tPrixProdVente.Size = new System.Drawing.Size(100, 20);
+            this.tPrixProdVente.Size = new System.Drawing.Size(123, 22);
             this.tPrixProdVente.TabIndex = 3;
             // 
             // tQuantiteProdVente
             // 
-            this.tQuantiteProdVente.Location = new System.Drawing.Point(336, 48);
+            this.tQuantiteProdVente.Location = new System.Drawing.Point(336, 49);
             this.tQuantiteProdVente.Name = "tQuantiteProdVente";
-            this.tQuantiteProdVente.Size = new System.Drawing.Size(100, 20);
+            this.tQuantiteProdVente.Size = new System.Drawing.Size(123, 22);
             this.tQuantiteProdVente.TabIndex = 2;
             // 
             // tNomProdVente
             // 
             this.tNomProdVente.Location = new System.Drawing.Point(92, 55);
             this.tNomProdVente.Name = "tNomProdVente";
-            this.tNomProdVente.Size = new System.Drawing.Size(100, 20);
+            this.tNomProdVente.Size = new System.Drawing.Size(100, 22);
             this.tNomProdVente.TabIndex = 1;
             // 
             // btnAjouterVente
             // 
+            this.btnAjouterVente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnAjouterVente.Location = new System.Drawing.Point(92, 112);
             this.btnAjouterVente.Name = "btnAjouterVente";
             this.btnAjouterVente.Size = new System.Drawing.Size(75, 23);
@@ -202,9 +210,10 @@
             // 
             // btnActualiser
             // 
-            this.btnActualiser.Location = new System.Drawing.Point(377, 112);
+            this.btnActualiser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnActualiser.Location = new System.Drawing.Point(364, 112);
             this.btnActualiser.Name = "btnActualiser";
-            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.Size = new System.Drawing.Size(95, 23);
             this.btnActualiser.TabIndex = 10;
             this.btnActualiser.Text = "Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
