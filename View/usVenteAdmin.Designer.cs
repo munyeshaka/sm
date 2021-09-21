@@ -28,28 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRechercheVente = new System.Windows.Forms.Button();
-            this.tRechercheVente = new System.Windows.Forms.TextBox();
             this.dgvVente = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVente)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnRechercheVente
-            // 
-            this.btnRechercheVente.Location = new System.Drawing.Point(622, 57);
-            this.btnRechercheVente.Name = "btnRechercheVente";
-            this.btnRechercheVente.Size = new System.Drawing.Size(75, 23);
-            this.btnRechercheVente.TabIndex = 16;
-            this.btnRechercheVente.Text = "Recherche";
-            this.btnRechercheVente.UseVisualStyleBackColor = true;
-            this.btnRechercheVente.Click += new System.EventHandler(this.btnRechercheVente_Click);
-            // 
-            // tRechercheVente
-            // 
-            this.tRechercheVente.Location = new System.Drawing.Point(507, 60);
-            this.tRechercheVente.Name = "tRechercheVente";
-            this.tRechercheVente.Size = new System.Drawing.Size(100, 20);
-            this.tRechercheVente.TabIndex = 15;
             // 
             // dgvVente
             // 
@@ -59,12 +41,20 @@
             this.dgvVente.Size = new System.Drawing.Size(517, 320);
             this.dgvVente.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(413, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "VENTE";
+            // 
             // usVenteAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnRechercheVente);
-            this.Controls.Add(this.tRechercheVente);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVente);
             this.Name = "usVenteAdmin";
             this.Size = new System.Drawing.Size(876, 463);
@@ -77,8 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnRechercheVente;
-        private System.Windows.Forms.TextBox tRechercheVente;
         private System.Windows.Forms.DataGridView dgvVente;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -44,8 +44,8 @@ namespace View
 
                 if (line != 0)
                     MessageBox.Show("Enregistrement reussi");
-                //Actualiser();
-                //Reinitialiser();
+                Actualiser();
+                Reinitialiser();
             }
 
             catch (Exception ex)
@@ -62,6 +62,118 @@ namespace View
             dgvUser.Columns[0].HeaderText = "#";
             dgvUser.Columns[1].HeaderText = "Nom d'utilisateur";
             dgvUser.Columns[2].HeaderText = "Mot de passe";
+        }
+
+        private void btnModifierUser_Click(object sender, EventArgs e)
+        {
+            Application.EnableVisualStyles();
+            DialogResult dr = MessageBox.Show("Voulez-vous vraiment Modifier ces donnees??", "", MessageBoxButtons.YesNo);
+            switch (dr)
+            {
+                case DialogResult.Yes:
+                    u = new User();
+                    u.IdUser = tidUser.Text;
+                    u.Usernom = tusername.Text;
+                    u.Password = tPassword.Text;
+
+
+                    try
+                    {
+                        int line = Factory.modifierUser(u);
+
+                        if (line != 0)
+                            MessageBox.Show("Modification Reussie");
+                        Actualiser();
+                        Reinitialiser();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    MessageBox.Show("Votre donnees a ete modifiees !!");
+                    break;
+                case DialogResult.No:
+                    MessageBox.Show("Votre donnees n'a pas ete modifiees!!");
+                    break;
+            }
+        }
+
+        void recupererUser(User u)
+        {
+            tidUser.Text = u.IdUser;
+            tusername.Text = u.Usernom;
+            tPassword.Text = u.Password;
+
+        }
+        private void btnRechercheUser_Click(object sender, EventArgs e)
+        {
+            string ma = tRechercheUser.Text.Trim();
+            u = Factory.getUserRechercheByid(ma);
+            if (u != null)
+            {
+                recupererUser(u);
+            }
+        }
+
+        private void btnActualiser_Click(object sender, EventArgs e)
+        {
+            listUser = Factory.getUser();
+            dgvUser.DataSource = listUser;
+            Reinitialiser();
+        }
+        private void Actualiser()
+        {
+            listUser = Factory.getUser();
+            dgvUser.DataSource = listUser;
+        }
+        private void Reinitialiser()
+        {
+            tidUser.Text = "";
+            tusername.Text = "";
+            tPassword.Text = "";
+            tRechercheUser.Text = "";
+
+        }
+
+        private void dgvUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvUser.SelectedRows.Count > 0)
+            {
+                tidUser.Text = dgvUser.SelectedRows[0].Cells[0].Value.ToString();
+                tusername.Text = dgvUser.SelectedRows[0].Cells[1].Value.ToString();
+                tPassword.Text = dgvUser.SelectedRows[0].Cells[2].Value.ToString();
+                tRechercheUser.Text = "";
+            }
+        }
+
+        private void btnSupprimerUser_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Voulez-vous vraiment supprimer ce resident??", "", MessageBoxButtons.YesNo);
+            switch (dr)
+            {
+                case DialogResult.Yes:
+
+                    try
+                    {
+                        int line = Factory.deleteUser(tidUser.Text);
+                        if (line != 0)
+                            MessageBox.Show("Suppression reussi");
+                        Actualiser();
+                        Reinitialiser();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    MessageBox.Show("Votre donnees a ete supprime ...");
+                    break;
+                case DialogResult.No:
+                    MessageBox.Show("Votre donnees n'a pas ete supprime ...");
+                    break;
+
+            }
         }
     }
 }

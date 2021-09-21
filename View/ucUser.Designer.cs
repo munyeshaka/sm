@@ -41,6 +41,7 @@
             this.btnSupprimerUser = new System.Windows.Forms.Button();
             this.tidUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnActualiser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@
             this.btnRechercheUser.TabIndex = 20;
             this.btnRechercheUser.Text = "Recherche";
             this.btnRechercheUser.UseVisualStyleBackColor = true;
+            this.btnRechercheUser.Click += new System.EventHandler(this.btnRechercheUser_Click);
             // 
             // tRechercheUser
             // 
@@ -67,6 +69,7 @@
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.Size = new System.Drawing.Size(344, 320);
             this.dgvUser.TabIndex = 18;
+            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
             // 
             // tusername
             // 
@@ -83,6 +86,7 @@
             this.btnModifierUser.TabIndex = 16;
             this.btnModifierUser.Text = "Modifier";
             this.btnModifierUser.UseVisualStyleBackColor = true;
+            this.btnModifierUser.Click += new System.EventHandler(this.btnModifierUser_Click);
             // 
             // tPassword
             // 
@@ -136,6 +140,7 @@
             this.btnSupprimerUser.TabIndex = 23;
             this.btnSupprimerUser.Text = "Supprimer";
             this.btnSupprimerUser.UseVisualStyleBackColor = true;
+            this.btnSupprimerUser.Click += new System.EventHandler(this.btnSupprimerUser_Click);
             // 
             // tidUser
             // 
@@ -154,10 +159,21 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "id";
             // 
+            // btnActualiser
+            // 
+            this.btnActualiser.Location = new System.Drawing.Point(180, 277);
+            this.btnActualiser.Name = "btnActualiser";
+            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.TabIndex = 26;
+            this.btnActualiser.Text = "Actualiser";
+            this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
+            // 
             // ucUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnActualiser);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tidUser);
             this.Controls.Add(this.btnSupprimerUser);
@@ -195,6 +211,7 @@
         private System.Windows.Forms.Button btnSupprimerUser;
         private System.Windows.Forms.TextBox tidUser;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnActualiser;
 
     }
 }

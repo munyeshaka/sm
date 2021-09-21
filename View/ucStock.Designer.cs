@@ -31,6 +31,7 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnActualiser = new System.Windows.Forms.Button();
             this.tidProd = new System.Windows.Forms.TextBox();
             this.idProdll = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.dgvStock = new System.Windows.Forms.DataGridView();
             this.tRecherche = new System.Windows.Forms.TextBox();
             this.btnRecherche = new System.Windows.Forms.Button();
-            this.btnActualiser = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +88,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PRODUIT";
+            // 
+            // btnActualiser
+            // 
+            this.btnActualiser.Location = new System.Drawing.Point(484, 112);
+            this.btnActualiser.Name = "btnActualiser";
+            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.TabIndex = 9;
+            this.btnActualiser.Text = "Actualiser";
+            this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // tidProd
             // 
@@ -199,16 +209,6 @@
             this.btnRecherche.Text = "Recherche";
             this.btnRecherche.UseVisualStyleBackColor = true;
             this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click_1);
-            // 
-            // btnActualiser
-            // 
-            this.btnActualiser.Location = new System.Drawing.Point(484, 112);
-            this.btnActualiser.Name = "btnActualiser";
-            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
-            this.btnActualiser.TabIndex = 9;
-            this.btnActualiser.Text = "Actualiser";
-            this.btnActualiser.UseVisualStyleBackColor = true;
-            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // ucStock
             // 

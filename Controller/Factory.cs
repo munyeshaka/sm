@@ -301,5 +301,67 @@ namespace Controller
             int n = commande.ExecuteNonQuery();
             return n;
         }//=======================END SUPRRIMER vente==============
+
+        //======================= MODIFIER user==============
+        public static int modifierUser(User u)
+        {
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+
+            commande.CommandText = "update dbo.utilisateur set idUser=@idu, username=@no, userPassword=@pass where idUser=@idu";
+
+            commande.Parameters.Add(new SqlParameter("@idu", u.IdUser));
+            commande.Parameters.Add(new SqlParameter("@no", u.Usernom));
+            commande.Parameters.Add(new SqlParameter("@pass", u.Password));
+
+
+            int n = commande.ExecuteNonQuery();
+            return n;
+
+        }////=======================END MODIFIER user==============
+
+        //=======================RECHERCHE user==============
+
+        public static User getUserRechercheByid(string idus)
+        {
+            ArrayList use = new ArrayList();
+            User u = null;
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "select * from dbo.utilisateur where idUser=@idu";
+            commande.Parameters.Add(new SqlParameter("@idu", idus));
+            SqlDataReader reader = commande.ExecuteReader();
+
+            if (reader.Read())
+            {
+                u = new User();
+
+                u.IdUser = reader["idUser"].ToString();
+                u.Usernom = reader["username"].ToString();
+                u.Password = reader["userPassword"].ToString();
+
+            }
+
+            reader.Close();
+            conn.Close();
+            return u;
+
+        }//=======================END RECHERCHE user==============
+        //======================= SUPRRIMER user==============
+        public static int deleteUser(string idu)
+        {
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "delete from dbo.utilisateur where idUser = @id";
+            commande.Parameters.AddWithValue("@id", idu);
+            int n = commande.ExecuteNonQuery();
+            return n;
+        }//=======================END SUPRRIMER user==============
+
     }
 }
