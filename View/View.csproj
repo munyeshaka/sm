@@ -49,12 +49,6 @@
     <Compile Include="ucAdmin.Designer.cs">
       <DependentUpon>ucAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucCaissier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucCaissier.Designer.cs">
-      <DependentUpon>ucCaissier.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucAdminLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,9 +83,6 @@
   <ItemGroup>
     <EmbeddedResource Include="ucAdmin.resx">
       <DependentUpon>ucAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucCaissier.resx">
-      <DependentUpon>ucCaissier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucAdminLogin.resx">
       <DependentUpon>ucAdminLogin.cs</DependentUpon>

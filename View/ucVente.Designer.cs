@@ -44,6 +44,7 @@
             this.tQuantiteProdVente = new System.Windows.Forms.TextBox();
             this.tNomProdVente = new System.Windows.Forms.TextBox();
             this.btnAjouterVente = new System.Windows.Forms.Button();
+            this.btnActualiser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVente)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             this.btnRechercheVente.TabIndex = 13;
             this.btnRechercheVente.Text = "Recherche";
             this.btnRechercheVente.UseVisualStyleBackColor = true;
+            this.btnRechercheVente.Click += new System.EventHandler(this.btnRechercheVente_Click);
             // 
             // tRechercheVente
             // 
@@ -80,9 +82,11 @@
             this.dgvVente.Name = "dgvVente";
             this.dgvVente.Size = new System.Drawing.Size(517, 320);
             this.dgvVente.TabIndex = 11;
+            this.dgvVente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVente_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualiser);
             this.groupBox1.Controls.Add(this.tidProdVente);
             this.groupBox1.Controls.Add(this.idProdll);
             this.groupBox1.Controls.Add(this.label4);
@@ -153,6 +157,7 @@
             this.btnSupprimerVente.TabIndex = 5;
             this.btnSupprimerVente.Text = "Supprimer";
             this.btnSupprimerVente.UseVisualStyleBackColor = true;
+            this.btnSupprimerVente.Click += new System.EventHandler(this.btnSupprimerVente_Click);
             // 
             // btnModifierVente
             // 
@@ -162,6 +167,7 @@
             this.btnModifierVente.TabIndex = 4;
             this.btnModifierVente.Text = "Modifier";
             this.btnModifierVente.UseVisualStyleBackColor = true;
+            this.btnModifierVente.Click += new System.EventHandler(this.btnModifierVente_Click);
             // 
             // tPrixProdVente
             // 
@@ -193,6 +199,16 @@
             this.btnAjouterVente.Text = "Ajouter";
             this.btnAjouterVente.UseVisualStyleBackColor = true;
             this.btnAjouterVente.Click += new System.EventHandler(this.btnAjouterVente_Click);
+            // 
+            // btnActualiser
+            // 
+            this.btnActualiser.Location = new System.Drawing.Point(377, 112);
+            this.btnActualiser.Name = "btnActualiser";
+            this.btnActualiser.Size = new System.Drawing.Size(75, 23);
+            this.btnActualiser.TabIndex = 10;
+            this.btnActualiser.Text = "Actualiser";
+            this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // ucVente
             // 
@@ -232,5 +248,6 @@
         private System.Windows.Forms.TextBox tQuantiteProdVente;
         private System.Windows.Forms.TextBox tNomProdVente;
         private System.Windows.Forms.Button btnAjouterVente;
+        private System.Windows.Forms.Button btnActualiser;
     }
 }

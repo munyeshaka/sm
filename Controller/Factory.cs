@@ -236,6 +236,70 @@ namespace Controller
             commande.Parameters.AddWithValue("@id", idp);
             int n = commande.ExecuteNonQuery();
             return n;
-        }//=======================END SUPRRIMER RESIDENT==============
+        }//=======================END SUPRRIMER Produit==============
+
+        //======================= MODIFIER vente==============
+        public static int modifierProduit(Vente v)
+        {
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+
+            commande.CommandText = "update dbo.vente set idProdVente=@idp, nomProdVente=@no, prixProdVente=@pri, qteProdVente=@q where idProdVente=@idp";
+
+            commande.Parameters.Add(new SqlParameter("@idp", v.IdProduitVente));
+            commande.Parameters.Add(new SqlParameter("@no", v.NomProduitVente));
+            commande.Parameters.Add(new SqlParameter("@pri", v.PrixProduitVente));
+            commande.Parameters.Add(new SqlParameter("@q", v.QteProduitVente));
+
+
+            int n = commande.ExecuteNonQuery();
+            return n;
+
+        }////=======================END MODIFIER vente==============
+
+        //=======================RECHERCHE vente==============
+
+        public static Vente getVenteRechercheByid(string idve)
+        {
+            ArrayList pro = new ArrayList();
+            Vente v = null;
+
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "select * from dbo.vente where idProdVente=@idv";
+            commande.Parameters.Add(new SqlParameter("@idv", idve));
+            SqlDataReader reader = commande.ExecuteReader();
+
+            if (reader.Read())
+            {
+                v = new Vente();
+
+                v.IdProduitVente = reader["idProdVente"].ToString();
+                v.NomProduitVente = reader["nomProdVente"].ToString();
+                v.PrixProduitVente = float.Parse(reader["prixProdVente"].ToString());
+                v.QteProduitVente = float.Parse(reader["qteProdVente"].ToString());
+
+            }
+
+            reader.Close();
+            conn.Close();
+            return v;
+
+        }//=======================END RECHERCHE vente==============
+
+        //======================= SUPRRIMER vente==============
+        public static int deleteVente(string idv)
+        {
+            if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+            SqlCommand commande = new SqlCommand();
+            commande.Connection = conn;
+            commande.CommandText = "delete from dbo.vente where idProdVente = @id";
+            commande.Parameters.AddWithValue("@id", idv);
+            int n = commande.ExecuteNonQuery();
+            return n;
+        }//=======================END SUPRRIMER vente==============
     }
 }

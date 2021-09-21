@@ -133,6 +133,7 @@ namespace View
                 tNomProd.Text = dgvStock.SelectedRows[0].Cells[1].Value.ToString();
                 tPrixProd.Text = dgvStock.SelectedRows[0].Cells[2].Value.ToString();
                 tQuantiteProd.Text = dgvStock.SelectedRows[0].Cells[3].Value.ToString();
+                tRecherche.Text = "";
             }
         }
 
@@ -145,7 +146,7 @@ namespace View
 
                     try
                     {
-                        int line = Factory.deleteProduit(tRecherche.Text);
+                        int line = Factory.deleteProduit(tidProd.Text);
                         if (line != 0)
                             MessageBox.Show("Suppression reussi");
                         Actualiser();
@@ -182,6 +183,7 @@ namespace View
              tNomProd.Text = "";
              tPrixProd.Text = "";
              tQuantiteProd.Text = "";
+             tRecherche.Text = "";
 
          }
     }

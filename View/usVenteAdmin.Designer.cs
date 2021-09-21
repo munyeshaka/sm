@@ -42,6 +42,7 @@
             this.btnRechercheVente.TabIndex = 16;
             this.btnRechercheVente.Text = "Recherche";
             this.btnRechercheVente.UseVisualStyleBackColor = true;
+            this.btnRechercheVente.Click += new System.EventHandler(this.btnRechercheVente_Click);
             // 
             // tRechercheVente
             // 

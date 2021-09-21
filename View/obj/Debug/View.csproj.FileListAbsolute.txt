@@ -1,6 +1,5 @@
 C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucAdmin.resources
-C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucCaissier.resources
 C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.ucStock.resources
 C:\Users\Munyeshaka\project\BIU\C#\sm\View\obj\Debug\View.csproj.GenerateResource.Cache
 C:\Users\Munyeshaka\project\BIU\C#\sm\View\bin\Debug\View.dll

@@ -33,5 +33,10 @@ namespace View
             dgvVente.Columns[3].HeaderText = "Quantite du produit";
             dgvVente.Columns[4].HeaderText = "Prix Totat";
         }
+
+        private void btnRechercheVente_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
