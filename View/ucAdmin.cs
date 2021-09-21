@@ -46,5 +46,10 @@ namespace View
             this.panelAdmin.Controls.Add(user);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

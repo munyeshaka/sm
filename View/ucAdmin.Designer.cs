@@ -33,6 +33,7 @@
             this.labelStock = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelVente = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panelAdmin
@@ -40,7 +41,7 @@
             this.panelAdmin.BackColor = System.Drawing.Color.White;
             this.panelAdmin.Location = new System.Drawing.Point(184, 3);
             this.panelAdmin.Name = "panelAdmin";
-            this.panelAdmin.Size = new System.Drawing.Size(895, 570);
+            this.panelAdmin.Size = new System.Drawing.Size(895, 625);
             this.panelAdmin.TabIndex = 1;
             // 
             // labelUser
@@ -90,18 +91,31 @@
             this.labelVente.Text = "Vente";
             this.labelVente.Click += new System.EventHandler(this.labelVente_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(46, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 16);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Logout";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // ucAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelStock);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelVente);
             this.Controls.Add(this.panelAdmin);
             this.Name = "ucAdmin";
-            this.Size = new System.Drawing.Size(1094, 576);
+            this.Size = new System.Drawing.Size(1094, 645);
             this.Load += new System.EventHandler(this.ucAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,5 +129,6 @@
         private System.Windows.Forms.Label labelStock;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelVente;
+        private System.Windows.Forms.Label label1;
     }
 }

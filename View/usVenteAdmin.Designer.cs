@@ -35,18 +35,21 @@
             // 
             // dgvVente
             // 
+            this.dgvVente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVente.Location = new System.Drawing.Point(180, 86);
+            this.dgvVente.Location = new System.Drawing.Point(51, 86);
             this.dgvVente.Name = "dgvVente";
-            this.dgvVente.Size = new System.Drawing.Size(517, 320);
+            this.dgvVente.Size = new System.Drawing.Size(705, 320);
             this.dgvVente.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(413, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(328, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(116, 33);
             this.label1.TabIndex = 15;
             this.label1.Text = "VENTE";
             // 
